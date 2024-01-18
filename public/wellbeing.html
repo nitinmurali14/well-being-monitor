@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well-Being Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header with Allianz Wellbeing Logo -->
+    <header>
+        <img src="Allianz-Wellbeing-Logo.png" alt="Allianz Wellbeing Logo" class="logo">
+    </header>
+
+
+    <div class="popup-container" id="mainPopupContainer">
+        <div class="popup">
+            <p><b>How are you feeling today?</b></p><span id="usernameSpan"></span></p>
+            <div class="emoji-container">
+                <div id="loadingSpinner"></div>
+
+                <!-- Pass the feeling to the submitFeedback function -->
+                <img src="Excited.jpg" alt="Excited" onclick="submitFeedback('Excited')">
+                <img src="Indifferent.jpg" alt="Average" onclick="submitFeedback('Average')">
+                <img src="Bad.jpg" alt="Bad" onclick="submitFeedback('Bad')">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

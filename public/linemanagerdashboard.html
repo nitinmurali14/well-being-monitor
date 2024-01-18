@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Manager Dashboard</title>
+    <link rel="stylesheet" href="linemanagerstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allianz+Neo:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header with Allianz Wellbeing Logo -->
+    <header>
+        <img src="Allianz-Wellbeing-Logo.png" alt="Allianz Wellbeing Logo" class="logo">
+    </header>
+
+    <!-- Search area to select the week -->
+    <div class="search-area">
+        <label for="weekSelector">Select Week:</label>
+        <select id="weekSelector" onchange="fetchUserResponses()">
+            <!-- Populate the dropdown dynamically using JavaScript -->
+        </select>
+    </div>
+
+    <!-- Button to view report -->
+    <div class="view-report-container">
+        <button class="viewreport-button" onclick="viewReport()">View Report</button>
+    </div>
+
+
+    <!-- Container to display page number -->
+    <div id="pageDisplayContainer" class="page-display-container">
+        <!-- Page number will be dynamically added here -->
+    </div>
+
+    <!-- Container to display user responses -->
+    <div id="userResponsesContainer" class="user-responses-container">
+        <!-- User responses table will be dynamically added here -->
+    </div>
+
+    <!-- Container for pagination buttons -->
+    <div id="paginationContainer" class="pagination-container">
+        <!-- Pagination buttons will be dynamically added here -->
+    </div>
+
+    <script src="linemanagerScript.js"></script>
+</body>
+
+</html>

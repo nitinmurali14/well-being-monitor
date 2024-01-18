@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: 'Allianz Neo', sans-serif;
+}
+
+@font-face {
+    font-family: 'Allianz Neo';
+    src: url('/Allianz Neo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 10%;
+    height: auto;
+}
+
+.pagination-container,
+.page-display-container,
+.user-responses-container {
+    display: none;
+}
+
+.search-area {
+    margin: 20px 0;
+}
+
+.page-display-container {
+    display: none;
+    margin-top: 12px;
+}
+
+
+
+.user-responses-container {
+    margin: 0px 0;
+    overflow-x: auto;
+    /* Add this property to enable horizontal scrolling if needed */
+}
+
+.user-responses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-family: 'Allianz Neo', sans-serif;
+}
+
+.user-responses-table th,
+.user-responses-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.pagination-container {
+
+    justify-content: center;
+    /* Center the pagination buttons horizontally */
+}
+
+.pagination-container button {
+    background-color: #007AB3;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    /* Adjust padding to make the buttons smaller */
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Allianz Neo', sans-serif;
+    margin: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(255, 255, 255, 0.1) inset;
+    /* Add box shadow for a mild emboss effect */
+}
+
+.pagination-container button:hover {
+    background-color: #003781;
+}
+
+.viewreport-button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007AB3;
+    color: #fff;
+    border: none;
+    font-family: 'Allianz Neo', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(255, 255, 255, 0.1) inset;
+    /* Add box shadow for a mild emboss effect */
+}
+
+.viewreport-button:hover {
+    background-color: #003781;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #007AB3;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
